@@ -158,10 +158,9 @@ a:visited {
     font-family: HelveticaNeue, sans-serif;
     text-transform: uppercase;
     display: flex;
-    align-items: center;
     flex-flow: row wrap;
     font-size: smaller;
-    margin: 55px 73px 0px 73px;
+    margin: 55px 73px 10px 73px;
     width: 85%;
 }
 
@@ -174,7 +173,7 @@ a:visited {
 /* Style the input fields */
 .form-inline input {
   vertical-align: middle;
-  margin: 5px 20px 30px 0;
+  margin: 5px 20px 30px 0px;
   padding: 10px;
   background-color: #fff;
   border: 1px solid #ddd;
@@ -210,6 +209,12 @@ input:focus {
     font-size: 19px;
 }
 
+#pass_message {
+    text-transform:initial;
+    margin-top: -25px;
+    color: red;
+}
+
 
 /* Add responsiveness - display the form controls vertically instead of horizontally on screens that are less than 1000px wide */
 @media (max-width: 1000px) {
@@ -219,7 +224,7 @@ input:focus {
   
     .form-inline {
       flex-direction: column;
-      justify-content: center;
+      align-items: center;
       margin: 35px 0px 0px 0px;
       width: 100%;
     }
@@ -282,5 +287,6 @@ input:focus {
 
     .col-1, .col-2 {
         width:auto;
+        margin-top: 20px;
     }
   }
