@@ -134,57 +134,54 @@ a:visited {
     margin-top: 30px;
 }
 
-.form-background {
-    margin: 50px 85px 0px 85px;
-    background-color: #FDFAF5;
-    border-radius: 50px;
-    height: 60vh;
-    width: 85%;
+.form-background{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    margin: 60px 60px 0px 85px;
+    background-color: #FDFAF5;
+    width: 52vw;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-radius: 20px;
 }
 
 .form-title {
     font-family: HelveticaNeue-Bold;
     text-transform: uppercase;
-    font-size: 1.8vw;
-    position: relative;
-    top: -10px;
-    left: 70px;
+    font-size: 1.5rem;
+    color:black;
+    margin-left: 60px;
 }
 
 .form-inline{
     font-family: HelveticaNeue, sans-serif;
     text-transform: uppercase;
+    background-color: #FDFAF5;;
     display: flex;
     flex-flow: row wrap;
+    gap: 20px;
     font-size: smaller;
-    margin: 55px 73px 10px 73px;
-    width: 85%;
-}
-
-.col-1, .col-2 {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
+    justify-content: center;
+    margin: 30px 0px 24px 0px;
 }
 
 /* Style the input fields */
-.form-inline input {
-  vertical-align: middle;
-  margin: 5px 20px 30px 0px;
-  padding: 10px;
-  background-color: #fff;
-  border: 1px solid #ddd;
+.input {
+    display: flex;
+    flex-flow: column wrap;
+    width: 40%;
+    font-size: .85rem;
+    text-transform: uppercase;
+}
+
+input{
+    padding: 10px;
+    font-size: 1rem;
+    margin-top: 5px;
 }
 
 input:focus {
     outline: 1px solid #F9A466;
-}
-
-.col-1 input {
-    margin-right: 30px;
 }
 
 .submit-btn {
@@ -211,22 +208,19 @@ input:focus {
 
 #pass_message {
     text-transform:initial;
-    margin-top: -25px;
     color: red;
+    margin-top: 6px;
 }
 
 
 /* Add responsiveness - display the form controls vertically instead of horizontally on screens that are less than 1000px wide */
 @media (max-width: 1000px) {
-    .form-inline input {
-      margin: 5px 0px 15px 0px;
-    }
-  
     .form-inline {
       flex-direction: column;
-      align-items: center;
-      margin: 35px 0px 0px 0px;
-      width: 100%;
+    }
+
+    .input{
+        width:auto;
     }
 
     .submit-btn {
@@ -267,9 +261,8 @@ input:focus {
     }
 
     .form-title {
-        top: 10px;
-        left: 0px;
         font-size: 4vw;
+        margin-left: 0px;
     }
 
     .description {
@@ -283,10 +276,5 @@ input:focus {
 
     input {
         width: 60vw;
-    }
-
-    .col-1, .col-2 {
-        width:auto;
-        margin-top: 20px;
     }
   }
