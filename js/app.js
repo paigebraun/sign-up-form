@@ -6,7 +6,6 @@ const message = document.querySelector('#pass_message');
 const submit = document.querySelector('.submit-btn');
 
 const input = document.querySelectorAll('input');
-console.log(input);
 
 submit.addEventListener('click', ()=> {
     if (userPass.value !== confPass.value) {
